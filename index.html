@@ -2,78 +2,30 @@
 
 <head>
 	<title>VoiceApp is phone calls for your web browser</title>
-	<style>
-		body {
-			color: white;
-			background-color: black;
-			font-family: monospace;
-			font-size: 2em;
-		}
-
-		/*#callings {
-    		width: 30%;
-    		border: none;
-			line-height: 0.7;
-			font-size: 1em;
-			padding: 0.5%;
-		}*/
-		/*body input:nth-child(2) {
- 			width: 150px;
-		}*/
-		input {
-			font-size: 1em;
-			border: none;
-			line-height: 1.5em;
-		}
-
-		input[type=button] {
-			cursor: pointer;
-		}
-
-		#peerid {
-			margin-top: 1em;
-			font-size: 2em;
-			color: #9cc0ff;
-		}
-
-		span.credits {
-			bottom: 1%;
-			right: 1%;
-			position: absolute;
-			font-size: 0.5em;
-			color: #515151;
-		}
-
-		a,
-		a:visited {
-			color: gray;
-		}
-
-		a:hover {
-			color: lightgrey;
-		}
-	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="sick-styling.css">
 </head>
 
 <body>
-	<script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
-	</p>
-	<h1>VoiceApp</h1> (note the caps) is the revolutionary way to call people without censorship or government
-	interference. <br />
-	it is https I think, so only top tier agencies can listen to your calls<br />
-	or maybe even they can't u missed the seed round go buy TSLA<br /><br />
-	VoiceApp can be used by people in banana republics (definitely not USA) for planning revolution AI POWED STARTUP and
-	not much blockchain anymore after i lost all my house in bitconnect<br />
-	<br />
-	donations: mail to Internal Revenue Service, PO Box 1303, Charlotte, NC 28201-1303
-	</p>
-	<input type="text" id="callings"></input>
-	<input type="button" onclick="call()" value="call"></input>
-	<input type="button" onclick="answerer()" value="answerer"></input>
-	<audio controls></audio>
-	<div id="peerid"></div>
+	<div class="container">
+		<h1>VoiceApp</h1>
+		<p>(note the caps) is the revolutionary way to call people without censorship or government
+		interference. <br />
+		it is https I think, so only top tier agencies can listen to your calls<br />
+		or maybe even they can't u missed the seed round go buy TSLA</p>
+		<p>VoiceApp can be used by people in banana republics (definitely not USA) for planning revolution AI POWED STARTUP
+		and
+		not much blockchain anymore after i lost all my house in bitconnect</p>
+		<p>donations: mail to Internal Revenue Service, PO Box 1303, Charlotte, NC 28201-1303</p>
+		<input type="text" id="callings"></input>
+		<input type="button" class="button-call" onclick="call()" value="call"></input>
+		<input type="button" class="button-answ" onclick="answerer()" value="answerer"></input>
+		<audio controls></audio>
+		<div id="peerid"></div>
+	</div>
 	<span class="credits">Code by <a href="https://github.com/geohot/">Geohot</a>. Design hack by <a
 			href="https://github.com/twinysam">Santiago_LHC</a></span>
+	<script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
 	<script>
 		//var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 		//console.log(getUserMedia);

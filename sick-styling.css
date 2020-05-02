@@ -1,0 +1,59 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+input {
+    font-size: 1em;
+    border: none;
+    line-height: 1.5em;
+}
+
+input[type=button] {
+    cursor: pointer;
+    background-color: #515151;
+    color: white;
+}
+
+input[type=button].button-call {
+    background-color: #6fb76f;
+}
+
+input[type=button].button-answ {
+    background-color: #7a96c6;
+}
+
+audio {
+    display: block;
+    margin-top: 2%;
+}
+
+#peerid {
+    display: block;
+    margin-top: 1em;
+    font-size: 2em;
+    color: #9cc0ff;
+}
+
+span.credits {
+    bottom: 1%;
+    right: 1%;
+    position: absolute;
+    font-size: 0.5em;
+    color: #515151;
+}
+
+a,
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: lightgrey;
+}
