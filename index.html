@@ -19,11 +19,14 @@
 		<p>donations: mail to Internal Revenue Service, PO Box 1303, Charlotte, NC 28201-1303</p>
 		<input type="text" id="callings"></input>
 		<input type="button" class="button-call" onclick="call()" value="call"></input>
-		<input type="button" class="button-answ" onclick="answerer()" value="answerer"></input>
 		<audio controls></audio>
-		<div id="peerid"></div>
+		<div class="answerer-code">
+			<input type="button" class="button-answ" onclick="answerer()" value="answerer"></input>
+			<div id="peerid"></div>
+		</div>
+		
 	</div>
-	<span class="credits">Code by <a href="https://github.com/geohot/">Geohot</a>. Design hack by <a
+	<span class="credits">Code and Manifesto by <a href="https://github.com/geohot/">Geohot</a>. Design hack by <a
 			href="https://github.com/twinysam">Santiago_LHC</a></span>
 	<script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
 	<script>

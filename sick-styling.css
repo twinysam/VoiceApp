@@ -30,30 +30,44 @@ input[type=button].button-answ {
 }
 
 audio {
-    display: block;
-    margin-top: 2%;
+
+}
+
+.answerer-code {
+    margin-top: 1rem;
 }
 
 #peerid {
-    display: block;
-    margin-top: 1em;
-    font-size: 2em;
+    display: inline;
+    font-size: 2rem;
     color: #9cc0ff;
+ /*   line-height: 80px;*/
 }
 
 span.credits {
     bottom: 1%;
     right: 1%;
-    position: absolute;
+    position: fixed;
     font-size: 0.5em;
     color: #515151;
 }
 
 a,
-a:visited {
+span.credits a:visited {
     color: gray;
 }
 
-a:hover {
+span.credits a:hover {
     color: lightgrey;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 990px) {
+	.container {
+		width: 100%;
+    }
+    span.credits {
+        display: none;
+    }
 }
