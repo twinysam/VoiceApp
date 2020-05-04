@@ -13,6 +13,7 @@ input {
     font-size: 1em;
     border: none;
     line-height: 1.5em;
+    border-radius: 0;
 }
 
 input[type=button] {
@@ -29,9 +30,7 @@ input[type=button].button-answ {
     background-color: #7a96c6;
 }
 
-audio {
-
-}
+audio {}
 
 .answerer-code {
     margin-top: 1rem;
@@ -41,7 +40,7 @@ audio {
     display: inline;
     font-size: 2rem;
     color: #9cc0ff;
- /*   line-height: 80px;*/
+    /*   line-height: 80px;*/
 }
 
 span.credits {
@@ -64,10 +63,56 @@ span.credits a:hover {
 /* MEDIA QUERIES */
 
 @media (max-width: 990px) {
-	.container {
-		width: 100%;
+    .container {
+        width: 100%;
     }
+
     span.credits {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    input {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 574px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input {
+        min-height: 50px;
+        font-size: 5vw;
+    }
+
+    input#callings {
+        width: 75%;
+    }
+
+    input.button-call {
+        width: 20%;
+    }
+
+    input.answerer-code {
+        width: 50%
+        
+    }
+
+    #peerid {
+        font-size: 6vw;
 }
