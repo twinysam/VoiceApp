@@ -14,6 +14,9 @@ input {
     border: none;
     line-height: 1.5em;
     border-radius: 0;
+    text-align: center;
+    padding: 2.5%;
+    box-sizing: border-box;
 }
 
 input[type=button] {
@@ -26,8 +29,16 @@ input[type=button].button-call {
     background-color: #6fb76f;
 }
 
+input[type=button].button-call:active {
+    background-color: #89e689;
+}
+
 input[type=button].button-answ {
     background-color: #7a96c6;
+}
+
+input[type=button].button-answ:active {
+    background-color: #a0c3ff
 }
 
 audio {}
@@ -41,6 +52,10 @@ audio {}
     font-size: 2rem;
     color: #9cc0ff;
     /*   line-height: 80px;*/
+}
+
+.bottom-space {
+    height: 5vh;
 }
 
 span.credits {
