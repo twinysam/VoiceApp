@@ -9,7 +9,7 @@ h1 {
     font-size: 5.5rem;
 }
 
-input {
+input, button {
     font-size: 1em;
     border: none;
     line-height: 1.5em;
@@ -19,25 +19,25 @@ input {
     box-sizing: border-box;
 }
 
-input[type=button] {
+button {
     cursor: pointer;
     background-color: #515151;
     color: white;
 }
 
-input[type=button].button-call {
+button.button-call {
     background-color: #6fb76f;
 }
 
-input[type=button].button-call:active {
+button.button-call:active {
     background-color: #89e689;
 }
 
-input[type=button].button-answ {
+button.button-answ {
     background-color: #7a96c6;
 }
 
-input[type=button].button-answ:active {
+button.button-answ:active {
     background-color: #a0c3ff
 }
 
