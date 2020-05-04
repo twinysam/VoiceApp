@@ -41,7 +41,10 @@ input[type=button].button-answ:active {
     background-color: #a0c3ff
 }
 
-audio {}
+audio {
+    display: block;
+    margin-top: 1vh;
+}
 
 .answerer-code {
     margin-top: 1rem;
